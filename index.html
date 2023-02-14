@@ -1,27 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Mi ubicación GPS</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1 style="color:blue;">Mi ubicación</h1>
- <h1 style="color:blue; id="location">Cargando ubicación...</h1>
-<script>
-if (navigator.geolocation) {
- navigator.geolocation.getCurrentPosition(function(position) {
- var latitude = position.coords.latitude;
- var longitude = position.coords.longitude;
- document.getElementById("location").innerHTML =
- "Latitud: " + latitude + "<br>Longitud: " + longitude;
- 
-}); 
-} else {
-
- document.getElementById("location").innerHTML =
-"Lo siento, tu navegador no soporta la ubicación GPS.";
-}
-</script>
-<p style="color:red;">Esta es mi ubicación actual</p>
+<h1>Que es GPS</h1>
+<p> El Sistema de Posicionamiento Global (GPS) es un servicio 
+propiedad de los EE. UU. que proporciona a los usuarios 
+información sobre posicionamiento, navegación y cronometría.</p>
 </body>
 </html>
